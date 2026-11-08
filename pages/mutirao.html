@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>GuaraClub – Mutirão</title>
+  <link rel="icon" type="image/png" href="../images/logo_guararedondo-circular.png">
+  <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+  <div class="app">
+    <div class="top">
+      <button class="pill" id="themeBtn">💡</button>
+      <a class="pill" href="chat.html">💬 Chat</a>
+      <button class="pill" type="button" data-search-open>🔍 Pesquisa</button>
+      <button class="pill menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav" id="main-nav">
+        <a href="sobre.html">Sobre</a>
+        <a href="comunidade.html">Comunidade</a>
+        <a href="vagas.html">Vagas</a>
+        <a href="novidades.html">Novidades</a>
+        <a href="devs.html">Devs</a>
+        <a href="../index.html">Sair</a>
+      </nav>
+    </div>
+
+    <div class="box">
+      <div class="mut">
+        <div class="ev">
+          <span class="tag">🛠️ COMUNIDADE BUILDTREE</span>
+          <h3>Sprint coletiva pra derrubar os bugs</h3>
+          <div class="alert">🚨 Mutirão de Caça-Bugs</div>
+          <div class="g2">
+            <div>📅 Data/Hora<b>Hoje, às 19:30</b>Horário de Brasília</div>
+            <div>🏆 Premiação<b>R$ 1.500,00</b>+ Estágio na GuaraClub Tech<br>+ Badge Lendária no perfil</div>
+            <div>💻 Stack do projeto<b>Node.js, React, PostgreSQL</b></div>
+            <div>👥 Vagas restantes<b id="vg" style="color:#7be07b">14 vagas</b>na sala principal</div>
+          </div>
+          <button onclick="var e=document.getElementById('vg');e.textContent='13 vagas';this.textContent='Inscrição confirmada ✓'">Entrar no mutirão</button>
+        </div>
+        <div>
+          <div class="hl">🚨 Hora de apagar o incêndio: Junte-se ao Mutirão de Caça-Bugs da Comunidade Buildtree hoje, às 19:30!<br>#Buildtree #MutiraoDev #CacaBugs</div>
+          <div class="hl">🏆 Caça-bugs valendo prêmio, vaga de estágio e badge lendária no perfil: restam apenas 14 vagas na sala principal!<br>#NodeJS #ReactJS</div>
+          <div class="hl">⚠️ As vagas fecham em breve! Acesse buildtree.com.br/mutirao para garantir o seu lugar.<br>#DevsBrasil #BugHunter #VagasTech</div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="foot">
+      <span>Sobre • Comunidade • Vagas • Novidades • Devs • Sair</span>
+      <span>© 2026 Devan. Todos os direitos reservados.<br>Developed by Devan</span>
+      <span>"Sob o mesmo céu, sonhamos alto"</span>
+    </footer>
+  </div>
+
+  <script src="../js/script.js"></script>
+</body>
+</html>

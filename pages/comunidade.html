@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>GuaraClub – Comunidade</title>
+  <link rel="icon" type="image/png" href="../images/logo_guararedondo-circular.png">
+  <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body class="community-page">
+  <div class="app">
+    <div class="top">
+      <button class="pill" id="themeBtn">💡</button>
+      <a class="pill" href="chat.html">💬 Chat</a>
+      <button class="pill" type="button" data-search-open>🔍 Pesquisa</button>
+      <button class="pill menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav" id="main-nav">
+        <a href="sobre.html">Sobre</a>
+        <a href="comunidade.html" class="on">Comunidade</a>
+        <a href="vagas.html">Vagas</a>
+        <a href="novidades.html">Novidades</a>
+        <a href="devs.html">Devs</a>
+        <a href="../index.html">Sair</a>
+      </nav>
+    </div>
+
+    <div class="cols">
+      <div>
+        <div class="box">
+          <span class="ttl">Sugestões</span>
+          <div class="sug">
+            <div class="pc"><div class="av">👩</div><b>Alice Pereira</b><br>32, Curitiba, PR<em>8 amigos em comum</em><button onclick="this.textContent='ENVIADO ✓';this.className='ok'">ADICIONAR</button></div>
+            <div class="pc"><div class="av">🧔</div><b>Bruno Silva</b><br>29, São Paulo, SP<em>Estudou na USP</em><button onclick="this.textContent='ENVIADO ✓';this.className='ok'">ADICIONAR</button></div>
+            <div class="pc"><div class="av">👩🏾</div><b>Camila Lima</b><br>27, Bahia<em>Trabalha na TechCorp</em><button onclick="this.textContent='ENVIADO ✓';this.className='ok'">ADICIONAR</button></div>
+          </div>
+        </div>
+        <div class="box side">
+          <span class="ttl">Destaques do dia</span>
+          <div class="hl">🤖 IA generativa segue revolucionando o mercado de trabalho em 2026. Empresas que se adaptam saem na frente.</div>
+          <div class="hl">📱 Novos smartphones chegam com câmeras ainda mais inteligentes e bateria que dura o dia todo.</div>
+          <div class="hl">🧭 GuaraClub reúne comunidade, oportunidades e novidades em um só lugar.</div>
+          <div class="hl">🤝 Projetos colaborativos aproximam pessoas e transformam ideias em soluções.</div>
+        </div>
+      </div>
+
+      <div>
+        <div class="box">
+          <div class="tabs">
+            <button type="button" class="on" data-community-tab="groups" aria-selected="true">Grupos</button>
+            <button type="button" data-community-tab="projects" aria-selected="false">Projetos</button>
+            <button type="button" data-community-tab="qa" aria-selected="false">Q&amp;A</button>
+            <button type="button" data-community-tab="partners" aria-selected="false">Parceiros</button>
+          </div>
+          <div class="inner community-content">
+            <section class="community-panel" data-community-panel="groups" aria-label="Grupos">
+              <article class="post w community-card">
+                <b>Fórum de Dúvidas e Discussões</b>
+                <p>Converse sobre código, arquitetura, bancos de dados e desafios do dia a dia.</p>
+                <span class="community-tag">#Q&amp;A #Desenvolvimento</span>
+              </article>
+              <article class="post w community-card">
+                <b>Projetos dos Membros</b>
+                <p>Compartilhe portfólios e ideias para receber feedback da comunidade.</p>
+                <span class="community-tag">#Showcase #Portfólio</span>
+              </article>
+              <article class="post w community-card">
+                <b>Busca de Parceiros</b>
+                <p>Encontre pessoas para colaborar em projetos open source, startups ou side projects.</p>
+                <span class="community-tag">#Colaboração #OpenSource</span>
+              </article>
+              <article class="post w community-card">
+                <b>Grupos de Estudo</b>
+                <p>Compartilhe materiais, livros e exercícios enquanto aprende em conjunto.</p>
+                <span class="community-tag">#Estudos #Aprendizado</span>
+              </article>
+            </section>
+            <section class="community-panel" data-community-panel="projects" aria-label="Projetos" hidden>
+              <article class="post w community-card">
+                <b>GuaraTask</b>
+                <p>Aplicação web para organizar tarefas e acompanhar a rotina de estudos.</p>
+                <span class="community-tag">React · Organização</span>
+              </article>
+              <article class="post w community-card">
+                <b>EcoRota</b>
+                <p>Mapa colaborativo que reúne pontos de coleta seletiva por região.</p>
+                <span class="community-tag">Mapas · Sustentabilidade</span>
+              </article>
+              <article class="post w community-card">
+                <b>DevMatch</b>
+                <p>Plataforma para encontrar colaboradores com interesses e habilidades em comum.</p>
+                <span class="community-tag">Comunidade · JavaScript</span>
+              </article>
+              <article class="post w community-card">
+                <b>Finanças em Dia</b>
+                <p>Painel simples para registrar despesas e visualizar o orçamento mensal.</p>
+                <span class="community-tag">Python · Dados</span>
+              </article>
+            </section>
+            <section class="community-panel" data-community-panel="qa" aria-label="Perguntas e respostas" hidden>
+              <article class="post w community-card">
+                <b>Como organizar componentes em um projeto React?</b>
+                <p>Estou começando uma aplicação maior. Como vocês separam componentes, páginas e estilos?</p>
+                <span class="community-tag">React · 8 respostas</span>
+              </article>
+              <article class="post w community-card">
+                <b>Quando devo usar índices no banco de dados?</b>
+                <p>Quais consultas se beneficiam de índices e que impacto eles têm nas gravações?</p>
+                <span class="community-tag">Banco de dados · 5 respostas</span>
+              </article>
+              <article class="post w community-card">
+                <b>Qual a melhor forma de tratar erros em uma API?</b>
+                <p>Quero padronizar as respostas de erro sem esconder detalhes importantes para depuração.</p>
+                <span class="community-tag">Back-end · 12 respostas</span>
+              </article>
+              <article class="post w community-card">
+                <b>Como montar meu primeiro portfólio?</b>
+                <p>Quais projetos e informações são mais úteis para apresentar em uma vaga de estágio?</p>
+                <span class="community-tag">Carreira · 6 respostas</span>
+              </article>
+            </section>
+            <section class="community-panel" data-community-panel="partners" aria-label="Parceiros de projeto" hidden>
+              <article class="post w community-card">
+                <b>Aplicativo de hábitos de estudo</b>
+                <p>Busca uma pessoa de front-end para criar uma interface acessível para estudantes.</p>
+                <span class="community-tag">React · Front-end</span>
+              </article>
+              <article class="post w community-card">
+                <b>Projeto open source de acessibilidade</b>
+                <p>Convite para colaborar em melhorias de acessibilidade em sites e ferramentas.</p>
+                <span class="community-tag">Open source · Acessibilidade</span>
+              </article>
+              <article class="post w community-card">
+                <b>Dashboard de dados públicos</b>
+                <p>Procura parceiro(a) para transformar conjuntos de dados públicos em visualizações.</p>
+                <span class="community-tag">Python · Visualização de dados</span>
+              </article>
+              <article class="post w community-card">
+                <b>Jogo educativo para navegador</b>
+                <p>Grupo está iniciando um jogo web para ensinar lógica de programação de forma interativa.</p>
+                <span class="community-tag">JavaScript · Jogos</span>
+              </article>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="foot">
+      <span>Sobre • Comunidade • Vagas • Novidades • Devs • Sair</span>
+      <span>© 2026 Devan. Todos os direitos reservados.<br>Developed by Devan</span>
+      <span>"Sob o mesmo céu, sonhamos alto"</span>
+    </footer>
+  </div>
+
+  <script src="../js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>GuaraClub – Chat</title>
+  <link rel="icon" type="image/png" href="../images/logo_guararedondo-circular.png">
+  <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body class="chat-page">
+  <div class="app">
+    <div class="top">
+      <button class="pill" id="themeBtn">💡</button>
+      <a class="pill" href="home.html">🏠 Home</a>
+      <button class="pill" type="button" data-search-open>🔍 Pesquisa</button>
+      <button class="pill menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav" id="main-nav">
+        <a href="sobre.html">Sobre</a>
+        <a href="comunidade.html">Comunidade</a>
+        <a href="vagas.html">Vagas</a>
+        <a href="novidades.html">Novidades</a>
+        <a href="devs.html">Devs</a>
+        <a href="../index.html">Sair</a>
+      </nav>
+    </div>
+
+    <div class="cols">
+      <div>
+        <div class="box">
+          <span class="ttl">Sugestões</span>
+          <div class="sug">
+            <div class="pc"><div class="av">👩</div><b>Alice Pereira</b><br>32, Curitiba, PR<em>8 amigos em comum</em><button onclick="this.textContent='ENVIADO ✓';this.className='ok'">ADICIONAR</button></div>
+            <div class="pc"><div class="av">🧔</div><b>Bruno Silva</b><br>29, São Paulo, SP<em>Estudou na USP</em><button onclick="this.textContent='ENVIADO ✓';this.className='ok'">ADICIONAR</button></div>
+            <div class="pc"><div class="av">👩🏾</div><b>Camila Lima</b><br>27, Bahia<em>Trabalha na TechCorp</em><button onclick="this.textContent='ENVIADO ✓';this.className='ok'">ADICIONAR</button></div>
+          </div>
+        </div>
+        <div class="box side">
+          <span class="ttl">Destaques do dia</span>
+          <div class="hl">🤖 IA generativa segue revolucionando o mercado de trabalho em 2026. Empresas que se adaptam saem na frente.</div>
+          <div class="hl">📱 Novos smartphones chegam com câmeras ainda mais inteligentes e bateria que dura o dia todo.</div>
+          <div class="hl">🧭 GuaraClub reúne comunidade, oportunidades e novidades em um só lugar.</div>
+        </div>
+      </div>
+
+      <div>
+        <div class="box">
+          <div class="tabs">
+            <button type="button" data-chat-tab="messages">Mensagens</button>
+            <button type="button" class="on" data-chat-tab="groups">Grupos</button>
+            <button type="button" data-chat-tab="requests">Solicitações</button>
+          </div>
+          <div class="inner chat-panel">
+            <div class="conversation-list" id="conversationList" hidden aria-label="Conversas"></div>
+            <div class="request-panel" id="requestPanel" hidden aria-label="Solicitações">
+              <section class="request-section">
+                <h3>Solicitações de mensagem <span>4</span></h3>
+                <div id="messageRequests"></div>
+              </section>
+              <section class="request-section">
+                <h3>Solicitações de amizade <span>3</span></h3>
+                <div id="friendRequests"></div>
+              </section>
+            </div>
+            <div id="messageThread">
+              <div class="thread-header" id="threadHeader" hidden>
+                <button class="thread-back" id="backToConversations" type="button" aria-label="Voltar para conversas">
+                  <svg class="back-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                    <path d="M19 12H5m0 0 6 6m-6-6 6-6"></path>
+                  </svg>
+                </button>
+                <b id="threadName"></b>
+              </div>
+            <div class="chat" id="chatArea">
+              <div class="m">
+                <div class="av">👩‍🦱</div>
+                <div class="bub"><b style="color:#4aa3ff">Ana</b>Genteee, vocês viram que agora tá tudo tendo inteligência artificial? 😂</div>
+              </div>
+              <div class="m">
+                <div class="av">👩🏻</div>
+                <div class="bub"><b style="color:#ff8d8d">Bia</b>SIM KKKKK<br>Daqui a pouco a IA vai fazer até nosso trabalho da faculdade.</div>
+              </div>
+              <div class="m">
+                <div class="av">👩‍🦰</div>
+                <div class="bub"><b style="color:#5fe08a">Carol</b>Amiga, daqui a pouco? 👀<br>Já faz tempo que ela tá ajudando a gente KKKKK</div>
+              </div>
+              <div class="m">
+                <div class="av">👩‍🦱</div>
+                <div class="bub"><b style="color:#4aa3ff">Ana</b>Pior que é verdade 😂<br>Eu usei pra entender um código em C ontem.</div>
+              </div>
+              <div id="mine"></div>
+            </div>
+            <div class="in">
+              <input id="mi" placeholder="Mensagens">
+              <button type="button" aria-label="Gravar áudio">
+                <svg class="mic-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                  <rect x="9" y="3" width="6" height="12" rx="3"></rect>
+                  <path d="M5 11a7 7 0 0 0 14 0M12 18v3m-4 0h8"></path>
+                </svg>
+              </button>
+              <button type="button" id="sendBtn">➤</button>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="foot">
+      <span>Sobre • Comunidade • Vagas • Novidades • Devs • Sair</span>
+      <span>© 2026 Devan. Todos os direitos reservados.<br>Developed by Devan</span>
+      <span>"Sob o mesmo céu, sonhamos alto"</span>
+    </footer>
+  </div>
+
+  <script src="../js/script.js"></script>
+</body>
+</html>

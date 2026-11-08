@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>GuaraClub – Home</title>
+  <link rel="icon" type="image/png" href="../images/logo_guararedondo-circular.png">
+  <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+  <div class="app">
+    <div class="top">
+      <button class="pill" id="themeBtn">💡</button>
+      <a class="pill" href="chat.html">💬 Chat</a>
+      <button class="pill" type="button" data-search-open>🔍 Pesquisa</button>
+      <button class="pill menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav" id="main-nav">
+        <a href="sobre.html">Sobre</a>
+        <a href="comunidade.html">Comunidade</a>
+        <a href="vagas.html">Vagas</a>
+        <a href="novidades.html">Novidades</a>
+        <a href="devs.html">Devs</a>
+        <a href="../index.html">Sair</a>
+      </nav>
+    </div>
+
+    <div class="cols">
+      <div>
+        <div class="box">
+          <span class="ttl">Sugestões</span>
+          <div class="sug">
+            <div class="pc">
+              <div class="av">👩</div>
+              <b>Alice Pereira</b><br>32, Curitiba, PR<em>8 amigos em comum</em>
+              <button onclick="this.textContent='ENVIADO ✓';this.className='ok'">ADICIONAR</button>
+            </div>
+            <div class="pc">
+              <div class="av">🧔</div>
+              <b>Bruno Silva</b><br>29, São Paulo, SP<em>Estudou na USP</em>
+              <button onclick="this.textContent='ENVIADO ✓';this.className='ok'">ADICIONAR</button>
+            </div>
+            <div class="pc">
+              <div class="av">👩🏾</div>
+              <b>Camila Lima</b><br>27, Bahia<em>Trabalha na TechCorp</em>
+              <button onclick="this.textContent='ENVIADO ✓';this.className='ok'">ADICIONAR</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="box side">
+          <span class="ttl">Destaques do dia</span>
+          <div class="hl">🤖 IA generativa segue revolucionando o mercado de trabalho em 2026. Empresas que se adaptam saem na frente.</div>
+          <div class="hl">📱 Novos smartphones chegam com câmeras ainda mais inteligentes e bateria que dura o dia todo.</div>
+          <div class="hl">🧭 GuaraClub reúne comunidade, oportunidades e novidades em um só lugar.</div>
+        </div>
+      </div>
+
+      <div>
+        <div class="cards">
+          <a class="vc wine" href="vagas.html">
+            <i>1 VAGA DISPONÍVEL</i>
+            <b>COORDENADOR(A) DE PROJETOS</b>
+            <p>Lidere times, organize entregas e faça a diferença nos nossos projetos mais estratégicos.</p>
+          </a>
+          <a class="vc" href="vagas.html">
+            <i>VAGA ABERTA</i>
+            <b>ESTAMOS CONTRATANDO</b>
+            <p>Analista de TI Pleno • Home office flexível • Vale alimentação e saúde</p>
+          </a>
+          <a class="vc d" href="vagas.html">
+            <i>VENHA PARA O NOSSO TIME</i>
+            <b>DESENVOLVEDOR(A) FULL STACK</b>
+            <p>Procuramos alguém apaixonado por tecnologia para crescer junto com a gente.</p>
+          </a>
+        </div>
+
+        <div class="box">
+          <div class="tabs home-tabs">
+            <button type="button" class="on" data-home-tab="publications" aria-selected="true">Suas Publicações</button>
+            <button type="button" data-home-tab="people" aria-selected="false">Pessoas</button>
+          </div>
+          <div class="home-panel" data-home-panel="publications" aria-label="Suas publicações">
+            <article class="post">
+              Passei o fim de semana estudando uma tecnologia nova e me lembrei por que amo essa área. Sempre tem algo novo pra aprender! 🚀
+              <div class="t">#DevLife #AprendizadoContínuo</div>
+            </article>
+            <article class="post w">
+              Feliz em compartilhar que comecei um novo desafio profissional essa semana! Gratidão por essa oportunidade. 🙌
+              <div class="t">#NovosDesafios #Carreira</div>
+            </article>
+            <article class="post">
+              Hoje finalizei meu primeiro projeto usando uma API e aprendi muito durante o processo. Próximo passo: melhorar a interface! 💻
+              <div class="t">#ProjetoPessoal #Programação</div>
+            </article>
+          </div>
+          <div class="home-panel" data-home-panel="people" aria-label="Comentários de pessoas" hidden>
+            <article class="post">
+              <b>Ana Costa</b>
+              <p>Adorei a iniciativa! Qual tecnologia você usou para começar?</p>
+            </article>
+            <article class="post w">
+              <b>Bruno Silva</b>
+              <p>Parabéns pela conquista! Compartilhe mais sobre esse projeto com a gente.</p>
+            </article>
+            <article class="post">
+              <b>Camila Lima</b>
+              <p>Também estou estudando esse assunto. Seu relato me motivou a continuar! 🙌</p>
+            </article>
+            <article class="post w">
+              <b>Diego Santos</b>
+              <p>Ficou muito legal! Se quiser, posso testar e te passar algumas sugestões. 🚀</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="foot">
+      <span>Sobre • Comunidade • Vagas • Novidades • Devs • Sair</span>
+      <span>© 2026 Devan. Todos os direitos reservados.<br>Developed by Devan</span>
+      <span>"Sob o mesmo céu, sonhamos alto"</span>
+    </footer>
+  </div>
+
+  <script src="../js/script.js"></script>
+</body>
+</html>
